@@ -25,7 +25,7 @@ public class CharFinder {
                 }
                 currentLength++;
             } else {
-                if (currentLength > maxLength) {
+                if (currentLength >= maxLength) {
                     maxLength = currentLength;
                     startPosition = currentPosition;
                 }
@@ -34,7 +34,7 @@ public class CharFinder {
             }
         }
 
-        if (currentLength > maxLength) {
+        if (currentLength >= maxLength) {
             maxLength = currentLength;
             startPosition = currentPosition;
         }
