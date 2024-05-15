@@ -52,6 +52,7 @@ public class TrainTicketsBonus {
         submitButton.setBounds(10, 85, 80, 20);
         submitButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
+
                 int km = Integer.parseInt(fieldKm.getText());
                 int age = Integer.parseInt(fieldAge.getText());
 
@@ -59,12 +60,9 @@ public class TrainTicketsBonus {
             }
         });
         panel.add(submitButton);
-
-        
     }
 
     public static double ticketCalculator(int ticketKm, int ticketAge) {
-
         double priceForKm = 0.21;
 
         double ticketPrice = ticketKm * priceForKm;
