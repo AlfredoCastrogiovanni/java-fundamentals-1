@@ -34,5 +34,7 @@ public class MetGala {
         } else {
             System.out.println("Access Denied");
         }
+
+        scanner.close();
     }
 }
