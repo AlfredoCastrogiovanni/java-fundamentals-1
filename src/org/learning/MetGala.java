@@ -26,6 +26,7 @@ public class MetGala {
         for (int i = 0; i < guestList.length; i++) {
             if (guestList[i].equals(guestName)) {
                 access = true;
+                break;
             }
         }
 
